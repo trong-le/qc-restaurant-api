@@ -14,6 +14,11 @@ create table if not exists restaurants (
     phone_number text null
 );
 
+create table if not exists hour_type (
+    id serial primary key,
+    description text null
+);
+
 create table if not exists operation_hours (
     id serial primary key,
     restaurant int null references restaurants,
@@ -25,11 +30,6 @@ create table if not exists operation_hours (
     thursday text null,
     friday text null,
     saturday text null
-);
-
-create table if not exists hour_type (
-    id serial primary key,
-    description text null
 );
 
 commit;
