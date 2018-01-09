@@ -15,7 +15,8 @@
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "jade": "^1.11.0",
-    "pg-promise": "^7.3.3"
+    "pg-promise": "^7.3.3",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "mocha": "^4.1.0",
