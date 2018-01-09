@@ -6,13 +6,12 @@ set schema 'restaurants';
 
 create table if not exists restaurants (
     id serial primary key,
-    name text not null,
+    restaurant_name text not null,
     happy_hour text not null,
     happy_hour_deals text not null,
     location text null,
     menu text null,
-    phone_number text null,
-
+    phone_number text null
 );
 
 create table if not exists operation_hours (
@@ -31,6 +30,6 @@ create table if not exists operation_hours (
 create table if not exists hour_type (
     id serial primary key,
     description text null
-)
+);
 
 commit;
