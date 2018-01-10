@@ -8,6 +8,6 @@ services:
             - POSTGRES_PASSWORD=${PASSWORD}
             - POSTGRES_DB=${DATABASE}
         volumes:
-            - ./utils/dbSetup.sql:/docker-entrypoint-initdb.d/dbSetup.sql
+            - ./src/utils/dbSetup.sql:/docker-entrypoint-initdb.d/dbSetup.sql
         ports:
             - "5432:5432"
