@@ -1,5 +1,5 @@
 {
-  "name": "qc-restaurant-deals",
+  "name": "qc-restaurant-api",
   "version": "1.0.0",
   "description": "Information on restaurant deals around the Cincinnati downtown area.",
   "main": "app.js",

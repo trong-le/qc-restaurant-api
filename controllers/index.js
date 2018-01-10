@@ -1,7 +1,10 @@
-const { Router } = require('express')
+const { Router } = require('express');
+const homepage = require('./homepage');
+const addRestaurant = require('./addRestaurant');
 
 const router = new Router();
 
-router.get('/', (req, res, next) => {});
+router.use('/', homepage);
+router.use('/submit', addRestaurant);
 
 module.exports = router;
