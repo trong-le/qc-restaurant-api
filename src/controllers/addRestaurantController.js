@@ -7,7 +7,7 @@ const router = new Router();
 
 router.post('/', async (req, res, next) => {
     try {
-        const { result } = geocode(req.address);
+        const { result } = await geocode(req.address);
 
         // Need to handle error in case object keys dont exist
         req.body.rating = await getRatings(result.geometry.location.lat, result.geometry.location.lng);
@@ -17,3 +17,5 @@ router.post('/', async (req, res, next) => {
         res.status(409).send();
     }
 });
+
+module.exports = router;

@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const homepage = require('./homepage');
-const addRestaurant = require('./addRestaurant');
+const homepage = require('./homepageController');
+const addRestaurant = require('./addRestaurantController');
 
 const router = new Router();
 
