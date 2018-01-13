@@ -4,7 +4,7 @@
   "description": "Information on restaurant deals around the Cincinnati downtown area.",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
     "test": "node_modules/.bin/mocha tests/**"
   },
   "keywords": [],
@@ -16,6 +16,7 @@
     "express": "^4.16.2",
     "jade": "^1.11.0",
     "pg-promise": "^7.3.3",
+    "request": "^2.83.0",
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
